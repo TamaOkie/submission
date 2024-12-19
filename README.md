@@ -4,14 +4,13 @@
 - [x] **【ステップ１】**<br>
 　パスワードを保存する処理をシェルスクリプトで作成した。
 
-　　  - シェルスクリプト： Kadai_step1.sh <br>
+　　  - シェルスクリプト： password_store.sh <br>
 　　  - 保存ファイル名　： kanri.txt <br>
 <br>
 - [ ] **【ステップ２】**<br>
 　前記のステップ１の機能に加えて、保存したパスワードを検索する機能を付与したシェルクリプトを作成した。
 
-　　  - シェルスクリプト： Kadai_step2.sh　　　　# 説明文書<br>
-　　　　　　　　　　　　password_manager.sh　# パスワードマネージャ<br>
+　　  - シェルスクリプト： password_manager.sh <br>
 　　  - 保存ファイル名　： kanri.csv <br>
 
 > [!CAUTION]
