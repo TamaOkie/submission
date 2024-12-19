@@ -1,0 +1,2 @@
+SONY,Ibuka,1946
+Fujitsu,Yoshimura,1935
