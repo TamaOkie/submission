@@ -28,10 +28,22 @@ read -p "次の選択肢から入力してください(Add Password/Get Password
         read -p "ユーザー名を入力してください：" user
         read -p "パスワードを入力してください：" paswd
 
+        # 入力した「システム名・ユーザ名・パスワード」の確認
+        echo \
+        echo "入力内容を確認して下さい；"
+        echo "　・システム名： $svc"
+        echo "　・ユーザ名　： $user"
+        echo "　・パスワード： $paswd"
+        read -p "上記の内容で保存しますか？(y/n)：" confirm
+        if [[ $confirm != "y" ]]; then
+          continue
+        fi
+
         # 入力が完了したら管理ファイル(csv)に追記保管
         echo $svc,$user,$paswd >> kanri.csv
         echo "パスワードの追加は成功しました。"
         echo \
+        
         ;;
     "Get Password")
         read -p "サービス名を入力して下さい：" inq_svc
